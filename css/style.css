@@ -463,6 +463,13 @@ body {
 
 /* -------Footer------- */
 
+.container.footer-link {
+  display: flex;
+  align-items: baseline;
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -508,6 +515,7 @@ body {
 }
 
 .social {
+  margin-left: 70px;
 }
 
 .social-title {
