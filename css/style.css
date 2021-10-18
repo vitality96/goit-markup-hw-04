@@ -208,7 +208,9 @@ body {
 }
 
 .hero-btn {
+  padding: 10px 32px;
   border-radius: 4px;
+  border: none;
 
   background-color: var(--accent-color);
   color: var(--primary-white-color);
@@ -245,7 +247,7 @@ body {
   margin-bottom: 30px;
   padding: 25px 100px;
 
-  background-color: #f5f4fa;
+  background-color: var(--bg-btn-color);
   border-radius: 4px;
 }
 
@@ -455,8 +457,8 @@ body {
 }
 
 .clients-icon-link:hover {
-  border: 1px solid #2196f3;
-  fill: #2196f3;
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* -------Footer------- */
@@ -505,7 +507,81 @@ body {
   color: var(--accent-color);
 }
 
+.social {
+}
+
+.social-title {
+  margin-top: 0%;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.social-list {
+  display: flex;
+  padding: 0%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  list-style: none;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--primary-white-color);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+
 /*-------Сторінка сайту Портфоліо-------*/
+
+.button {
+  padding: 6px 22px;
+
+  background-color: var(--bg-btn-color);
+  color: var(--title-text-color);
+  cursor: pointer;
+
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  border: none;
+}
+
+.button.current {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 
 .portfolio-list.btn {
   display: flex;
@@ -528,6 +604,13 @@ body {
 .portfolio-item {
   margin-right: 30px;
   margin-bottom: 30px;
+  text-decoration: none;
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-item:nth-child(3n) {
@@ -573,37 +656,17 @@ body {
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+
+  text-decoration: none;
+}
+
+.portfolio-link {
+  text-decoration: none;
+  color: var(--primary-text-color);
 }
 
 .img-block {
   display: block;
-}
-
-.button {
-  padding: 6px 22px;
-
-  background-color: var(--bg-btn-color);
-  color: var(--title-text-color);
-  cursor: pointer;
-
-  font-family: Roboto;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  border-radius: 4px;
-}
-
-.button.current {
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
-}
-
-.button:hover,
-.button:focus {
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
 }
 
 /* -------Приховування елемента------- */
