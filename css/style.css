@@ -116,25 +116,13 @@ body {
 
 .mail-icon {
   margin-right: 10px;
-  fill: var(--primary-text-color);
-}
-
-.mail-icon:hover,
-.mail-icon:focus {
-  fill: var(--accent-color);
 }
 
 .phone-icon {
   margin-right: 10px;
-  fill: var(--primary-text-color);
 }
 
-.phone-icon:hover,
-.phone-icon:focus {
-  fill: var(--accent-color);
-}
-
-.contacts {
+.contact-list {
   display: flex;
   margin-left: auto;
   margin-top: 0%;
@@ -143,11 +131,16 @@ body {
   list-style: none;
 }
 
+.contact-item {
+  display: inline-block;
+}
+
 .contact {
   display: flex;
   align-items: center;
 
   color: var(--primary-text-color);
+  fill: var(--primary-text-color);
 
   font-weight: 500;
   font-size: 14px;
@@ -159,9 +152,10 @@ body {
 .contact:hover,
 .contact:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
-.contacts .item:last-child {
+.contact-list .contact-item:last-child {
   margin-left: 50px;
 }
 
@@ -242,10 +236,12 @@ body {
 /* -------Особливості------- */
 
 .icon-features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  padding: 25px 100px;
 
   background-color: var(--bg-btn-color);
   border-radius: 4px;
@@ -393,6 +389,8 @@ body {
 .team-padding {
   padding-top: 30px;
   padding-bottom: 30px;
+
+  background-color: var(--primary-white-color);
 }
 
 .team-text {
@@ -447,16 +445,18 @@ body {
 }
 
 .clients-icon-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 92px;
-  padding: 16px 32px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
 }
 
-.clients-icon-link:hover {
+.clients-icon-link:hover,
+.clients-icon-link:focus {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
 }
